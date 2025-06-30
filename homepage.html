@@ -1,0 +1,92 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+    <div class="text">
+        <span class="word">MAKE</span>
+        <span class="word">YOUR</span>
+        <span class="word">MATCH.</span>
+    </div>
+
+    <div class="button-container">
+        <a href="pg1.html" class="start">START HERE</a>
+    </div>
+
+    <style>
+        body {
+            background-color: blue;
+            margin: 0;
+            padding: 0;
+        }
+
+        .text {
+            color: aliceblue;
+            font-family: Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: 150px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        a.start {
+            background-color: transparent;
+            border: 2px solid white;
+            font-family: Helvetica, sans-serif;
+            font-weight: 900;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            padding: 20px 40px;
+            transition: 1s;
+            text-decoration: none;
+            outline: none;
+            display: inline-block;
+            font-size: 24px;
+            z-index: 10;
+        }
+
+        a.start:hover {
+            background-color: white;
+            color: blue;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px white;
+        }
+
+        /* 📱 Mobile-specific styles */
+        @media (max-width: 600px) {
+            .text {
+                font-size: 80px;
+                text-align: left;
+                padding-left: 90px;
+                padding-top: 100px;
+                padding-right: 10pc;
+            }
+
+            .word {
+                display: block;
+            }
+
+            .button-container {
+                margin-top: 20px; /* Move button further down */
+                text-align: center;
+            }
+
+            a.start {
+                display: inline-block;
+                font-size: 15px;
+                padding: 15px 20px;
+                animation: glow 1.5s ease-in-out infinite alternate;
+                margin-right: 120px;
+            }
+        }
+
+        
+    </style>
+</body>
+

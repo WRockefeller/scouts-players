@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: blue;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .header-container {
+            display: flex;
+            height: 100%;
+        }
+
+        .half {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+        }
+
+        .half span {
+            font-size: 9pc;
+            font-weight: bolder;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .left:hover {
+            background-color: white;
+        }
+
+        .left:hover span {
+            color: blue;
+        }
+
+        .right:hover {
+            background-color: white;
+        }
+
+        .right:hover span {
+            color: blue;
+        }
+        h1,h2,h3,h4 {
+            color: transparent;
+        }
+        @media (max-width: 600px) {
+            .half {
+        width: 50vw;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .half span {
+        font-size: 10vw; /* adjusts nicely to screen width */
+    }
+    @keyframes alternateGlowLeft {
+        0%, 49.9% {
+            background-color: white;
+        }
+        50%, 100% {
+            background-color: blue;
+        }
+    }
+
+    @keyframes alternateGlowRight {
+        0%, 49.9% {
+            background-color: blue;
+        }
+        50%, 100% {
+            background-color: white;
+        }
+    }
+
+    @keyframes textColorLeft {
+        0%, 49.9% {
+            color: blue;
+        }
+        50%, 100% {
+            color: white;
+        }
+    }
+
+    @keyframes textColorRight {
+        0%, 49.9% {
+            color: white;
+        }
+        50%, 100% {
+            color: blue;
+        }
+    }
+
+    .left {
+        animation: alternateGlowLeft 2s infinite;
+    }
+
+    .right {
+        animation: alternateGlowRight 2s infinite;
+    }
+
+    .left span {
+        animation: textColorLeft 2s infinite;
+    }
+
+    .right span {
+        animation: textColorRight 2s infinite;
+    }
+}
+    </style>
+</head>
+<body>
+   
+    <div class="header-container">
+        <a href="homepage.html" class="half left">
+            <span>HOST</span>
+        </a>
+        <a href="playhomepage.html" class="half right">
+            <span>PLAY</span>
+        </a>
+    </div>
+    <h1>How to find talent as a scout</h1>
+    <h2>Football tournaments near me </h2>
+    <h3>7v7 football</h3>
+    <h4>7v7 football near me</h4>
+</body>
+</html>
+
