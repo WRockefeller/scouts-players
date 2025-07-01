@@ -1,43 +1,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
-    <div class="text">
-        <span class="word">MAKE</span>
-        <span class="word">YOUR</span>
-        <span class="word">MATCH.</span>
-    </div>
+    <div class="container">
+        <div class="text">
+            <span class="word">MAKE</span>
+            <span class="word">YOUR</span>
+            <span class="word">MATCH.</span>
+        </div>
 
-    <div class="button-container">
-        <a href="pg1.html" class="start">START HERE</a>
+        <div class="button-container">
+            <a href="pg1.html" class="start">START HERE</a>
+        </div>
     </div>
 
     <style>
+        /* Center the content using Flexbox */
         body {
             background-color: blue;
             margin: 0;
             padding: 0;
+            height: 100vh; /* Full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .container {
+            text-align: center; /* Center text inside the container */
         }
 
         .text {
             color: aliceblue;
-            font-family: Helvetica, sans-serif;
             font-weight: 900;
             font-size: 150px;
             padding: 30px;
-            text-align: center;
-            margin-top: 30px;
         }
 
         .button-container {
-            text-align: center;
             margin-top: 40px;
-            position: relative;
         }
 
         a.start {
             background-color: transparent;
             border: 2px solid white;
-            font-family: Helvetica, sans-serif;
             font-weight: 900;
             color: white;
             border-radius: 50px;
@@ -63,8 +69,8 @@
             .text {
                 font-size: 80px;
                 text-align: left;
-                padding-left: 90px;
-                padding-top: 100px;
+                padding-left: 200px;
+                padding-top: 50px;
                 padding-right: 10pc;
             }
 
@@ -74,7 +80,6 @@
 
             .button-container {
                 margin-top: 20px; /* Move button further down */
-                text-align: center;
             }
 
             a.start {
@@ -86,7 +91,8 @@
             }
         }
 
-        
     </style>
 </body>
+        
+  
 
